@@ -92,7 +92,8 @@ class Site(object):
                                 'url' : paste.url
                                })
                         try:
-                            bot.statuses.update(status=tweet)
+                            print('Not tweeting this!')
+                            #bot.statuses.update(status=tweet)
                         except TwitterError:
                             pass
             self.update()
